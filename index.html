@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container flex">
+    <div class="container__body container__body--left">
+      <div class="form__container">
+        <div class="form__heading">
+          <h1 class="heading__top">Welcome back</h1>
+          <p class="heading__bottom">Welcome back! Please enter your details.</p>
+        </div>
+        <div class="form__body">
+          <div class="form__group">
+            <label class="form__label" for="email">Email</label>
+            <input id="email" type="email" class="form__input" placeholder="Enter your email">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="password">Password</label>
+            <input id="password" type="password" class="form__input" placeholder="Password">
+          </div>
+          <div class="form__group flex jc-sb">
+            <div class="flex__left checkbox-container">
+              <input id="checkbox" type="checkbox" class="form__input">
+              <label class="form__label" for="checkbox">Remember for 30 days</label>
+            </div>
+            <div class="flex__right">
+              <a href="_blank" class="form__link form__link--forgot-password">Forgot password</a>
+            </div>
+          </div>
+          <div class="form__group">
+            <button class="form__submit form__submit--signin">Sign in</button>
+          </div>
+          <div class="form__group">
+            <button class="form__submit form__submit--signin-google flex jc-c">
+              <img src="./google.png" class="google-logo">
+              Sign in with Google
+            </button>
+          </div>
+          <div class="form__group flex jc-c">
+            <p>Don't have an account?</p><a href="_blank" class="form__link form__link--signup">Sign up for free</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container__body container__body--right">
+      <div class="review-container">
+        <div class="review-container__top">
+          <p class="review__body">
+            "We've been using Untitled to kick start every new project and can't imagine working without it."
+          </p>
+        </div>
+        <div class="review-container__bottom flex jc-sb">
+          <div class="review__details">
+            <p class="review__name">Andi Lane</p>
+            <p class="review__position-1">Founder, Catalog</p>
+            <p class="review__position-2">Web Design Agency</p>
+          </div>
+          <div class="review__actions flex jc-sb">
+            <div class="review__ratings">
+              <span class="material-symbols-outlined filled">
+                star
+              </span>
+              <span class="material-symbols-outlined filled">
+                star
+              </span>
+              <span class="material-symbols-outlined filled">
+                star
+              </span>
+              <span class="material-symbols-outlined filled">
+                star
+              </span>
+              <span class="material-symbols-outlined filled">
+                star
+              </span>
+            </div>
+            <div class="review__buttons flex jc-c">
+              <div class="review__prev">
+                <button class="review__btn">
+                  <span class="material-symbols-outlined arrow-icons">
+                    arrow_circle_left
+                  </span>
+                </button>
+              </div>
+              <div class="review__next">
+                <button class="review__btn">
+                  <span class="material-symbols-outlined arrow-icons">
+                    arrow_circle_right
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

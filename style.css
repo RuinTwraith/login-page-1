@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+.filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+:root {
+  --default-fontsize: 0.8rem;
+  --light-grey: rgb(201, 201, 201);
+  --submit-btn-color: rgb(18, 14, 49);
+  --text-white: #ebebeb;
+  --text-grey: #acacac;
+  --text-black: #202020;
+}
+
+body {
+  font-size: var(--default-fontsize);
+  background-color: #f3f3f3;
+  font-family: 'Lato', sans-serif;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+}
+/* --------------- UTILITY CLASSES ---------------  */
+
+.flex {
+  display: flex;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-se {
+  justify-content: space-evenly;
+}
+.jc-c {
+  justify-content: center;
+}
+.arrow-icons {
+  font-size: 4rem !important;
+  cursor: pointer;
+}
+
+/* --------------- LAYOUT---------------  */
+
+.container__body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container__body--left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__body--right {
+  background-image: url(https://images.unsplash.com/photo-1662377088256-21b7bb419b60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  position: relative;
+  /* background-size: cover; */
+}
+
+/* --------------- FORM SECTION ---------------  */
+
+.form__container {
+  width: 18rem;
+}
+
+.heading__top {
+  margin-bottom: 0.5rem;
+}
+
+.heading__bottom {
+  margin-bottom: 1rem;
+  color: var(--text-grey);
+  font-size: 0.9rem;
+}
+
+.form__group {
+  margin: 1.2rem 0;
+}
+
+.form__group > .form__label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.form__group > .form__input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+}
+
+.form__submit {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+  cursor: pointer;
+}
+
+.form__submit--signin {
+  background-color: var(--submit-btn-color);
+  color: var(--text-white);
+}
+
+.form__submit--signin-google {
+  background-color: #fff;
+  color: var(--text-black);
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.form__submit--signin-google > .google-logo {
+  width: 1.2rem;
+}
+
+.form__link {
+  color: var(--text-black);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form__link--signup {
+  margin-left: 0.2rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container > .form__input {
+  margin-right: 0.4rem;
+  cursor: pointer;
+}
+
+/* --------------- REVIEW SECTION ---------------  */
+
+.review-container {
+  background-color: rgba(121, 121, 121, 0.233);
+  color: var(--text-white);
+  padding: 1.6rem;
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  width: 80%;
+  backdrop-filter: blur(16px) saturate(180%);
+  transform: translateX(-50%);
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.review__body {
+  font-size: 1.6rem;
+}
+
+.review__name {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+.review__position-1 {
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.review__position-2 {
+  font-size: 0.75rem;
+}
+
+.review__actions {
+  flex-direction: column;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+.review__buttons {
+  text-align: center;
+}
+
+.review__prev {
+  margin-right: 1rem;
+}
+
+.review__btn {
+  background: none;
+  border: none;
+  color: inherit;
+}
