@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+html {
+  font-size: 62.5%;
+}
 
 *,
 *::after,
@@ -17,7 +21,7 @@
 }
 
 :root {
-  --default-fontsize: 0.8rem;
+  --default-fontsize: 1.5rem;
   --light-grey: rgb(201, 201, 201);
   --submit-btn-color: rgb(18, 14, 49);
   --text-white: #ebebeb;
@@ -49,7 +53,7 @@ input {
   justify-content: center;
 }
 .arrow-icons {
-  font-size: 4rem !important;
+  font-size: 6rem !important;
   cursor: pointer;
 }
 
@@ -75,7 +79,7 @@ input {
 /* --------------- FORM SECTION ---------------  */
 
 .form__container {
-  width: 18rem;
+  width: 35rem;
 }
 
 .heading__top {
@@ -85,7 +89,7 @@ input {
 .heading__bottom {
   margin-bottom: 1rem;
   color: var(--text-grey);
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 
 .form__group {
@@ -94,20 +98,24 @@ input {
 
 .form__group > .form__label {
   display: block;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .form__group > .form__input {
   display: block;
   width: 100%;
-  padding: 0.5rem;
+  padding: 1.3rem;
   border-radius: 5px;
   border: 1px solid var(--light-grey);
 }
 
+.form__group--checkbox {
+  margin: 3rem 0;
+}
+
 .form__submit {
   width: 100%;
-  padding: 0.7rem;
+  padding: 1.5rem;
   border-radius: 5px;
   border: 1px solid var(--light-grey);
   cursor: pointer;
@@ -116,17 +124,19 @@ input {
 .form__submit--signin {
   background-color: var(--submit-btn-color);
   color: var(--text-white);
+  font-size: inherit;
 }
 
 .form__submit--signin-google {
   background-color: #fff;
   color: var(--text-black);
-  gap: 0.5rem;
+  gap: 1rem;
   align-items: center;
+  font-size: inherit;
 }
 
 .form__submit--signin-google > .google-logo {
-  width: 1.2rem;
+  width: 2.2rem;
 }
 
 .form__link {
@@ -136,7 +146,7 @@ input {
 }
 
 .form__link--signup {
-  margin-left: 0.2rem;
+  margin-left: 0.6rem;
 }
 
 .checkbox-container {
@@ -154,10 +164,10 @@ input {
 .review-container {
   background-color: rgba(121, 121, 121, 0.233);
   color: var(--text-white);
-  padding: 1.6rem;
+  padding: 2.5rem;
   position: absolute;
   left: 50%;
-  bottom: 2rem;
+  bottom: 5rem;
   width: 80%;
   backdrop-filter: blur(16px) saturate(180%);
   transform: translateX(-50%);
@@ -166,21 +176,22 @@ input {
 }
 
 .review__body {
-  font-size: 1.6rem;
+  font-size: 4rem;
 }
 
 .review__name {
-  font-size: 1.4rem;
-  margin: 1rem 0;
+  font-size: 3.2rem;
+  margin: 1.5rem 0;
 }
 
 .review__position-1 {
-  margin-bottom: 0.2rem;
-  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+  font-size: 2rem;
 }
 
 .review__position-2 {
-  font-size: 0.75rem;
+  font-size: 1.8rem;
+  font-weight: 100;
 }
 
 .review__actions {
